@@ -10,4 +10,7 @@ The neural network is broken into three pieces; the buidling of the model, the f
 
 The function of 'generate_architecture' and 'plot_live_architecture' allows the viewer to visualise the model architecture. See the deep neural network's (left) and autoencoder's (right) architecture below.
 
-![alt-text-1](neural_network_architecture.png){:height="50%" width="50%"} ![alt-text-2](autoencoder.png "Autoencoder")
+
+
+
+<img src="neural_network_architecture.png" width="200"/> <img src="autoencoder.png" width="300"/>
