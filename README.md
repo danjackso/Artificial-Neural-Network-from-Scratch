@@ -26,8 +26,22 @@ The magnitrude of weight adjustment is calculated using this method and implimne
 
 The code then allows the user to plot the training of the model using the fucntion of 'plot_live_architecture'. This takes in d_weights, the array detailing the magnitude of weight adjustment, as an input. A positive weight adjustment results in a green line and a negative weight adjustment results in a red line. This is plotted using matplotlib. See the training of the deep neural network (left) and autoencoder (right) below.
 
-<img src="neural_network_architecture.png" width="500"/> <img src="Training_autoencoder.gif" width="500"/>
+<img src="Training_neural_network.gif" width="500"/> <img src="Training_autoencoder.gif" width="500"/>
 
+## Loss plot
+The Training loss vs Epoch was then plotted using the 'plot_loss' fucntion. See the loss vs Epoch for the deep neural network training process (left) and autoencoder training proces (right) below.
 
+<img src="neural_network_loss.png" width="500"/> <img src="autoencoder_loss.png" width="500"/>
 
+# Future work
+-Exploration and implimentation of a more efficent optimiser. E.g. Adam optimiser.
+-Exploration and implimentation of a more efficent loss function. E.g. RMSE.
+-Exploration and implimentation of a more efficent Activation fucntion. Relu/Leaky Relu.
 
+# Requirements
+
+* python 3.5.x
+* numpy 1.15.0
+* matplotlib 3.3.0
+* itertools
+* math
