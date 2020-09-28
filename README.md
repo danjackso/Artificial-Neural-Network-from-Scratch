@@ -18,3 +18,16 @@ The function of 'generate_architecture' and 'plot_live_architecture' allows the 
 The feedforward process of the model is achieved using the 'feedforward' fucntion. This initally takes in x data and inputs it into the input layer. Then, a for loop is used over the hidden layers and output layer along with the respective current weight matrices (first feedforward will use the randomly initialized weights) to calculate the output value.
 
 ## Backpropagation
+The backpropagation process starts with calculating the loss between the actual data and the calculated model output. There are many available loss fucntions whioch can be used in the backpropagation process, hwoever, for this problem the loss fucntion is a simple sum-of-squares error. Thos is the sum of the fference btween each predicted vakue and the current value.
+
+After the error has been found, we can now propagate the error back and update the weights of the model. In order to find the magnitude of weight adjustment, we need to find the derviative of the loss function with respect to the weights. Using this loss fucntion (sum-of-squares error), we cannot directly calculate the derviative of the loss fucntion with respect to the weights and baises because the loss function does not contain tese variables. Hence, the chain rule is used to cauclate this.
+
+The magnitrude of weight adjustment is calculated using this method and implimneted into python using a for loop. The weights are then adjusted and the process of 'Feedforward' and 'Backpropagation' is then repeated for a specified number of epochs.
+
+The code then allows the user to plot the training of the model using the fucntion of 'plot_live_architecture'. This takes in d_weights, the array detailing the magnitude of weight adjustment, as an input. A positive weight adjustment results in a green line and a negative weight adjustment results in a red line. This is plotted using matplotlib. See the training of the deep neural network (left) and autoencoder (right) below.
+
+<img src="neural_network_architecture.png" width="500"/> <img src="Training_autoencoder.gif" width="500"/>
+
+
+
+
