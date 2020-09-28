@@ -33,9 +33,9 @@ The Training loss vs Epoch was then plotted using the 'plot_loss' fucntion. See 
 <img src="neural_network_loss.png" width="500"/> <img src="autoencoder_loss.png" width="500"/>
 
 # Future work
--Exploration and implimentation of a more efficent optimiser. E.g. Adam optimiser.
--Exploration and implimentation of a more efficent loss function. E.g. RMSE.
--Exploration and implimentation of a more efficent Activation fucntion. Relu/Leaky Relu.
+* Exploration and implimentation of a more efficent optimiser. E.g. Adam optimiser.
+* Exploration and implimentation of a more efficent loss function. E.g. RMSE.
+* Exploration and implimentation of a more efficent Activation fucntion. Relu/Leaky Relu.
 
 # Requirements
 
